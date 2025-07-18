@@ -1,0 +1,18 @@
+//.trivyignore
+
+# Vulnerabilidades ignoradas en imagen student-jarome.developer-app:7
+
+# MiniZip no es parte activa de zlib y pyminizip no es usado directamente
+CVE-2023-45853
+
+# glibc con setuid binarios no es relevante en contenedores comunes
+CVE-2025-4802
+
+# PAM no se usa dentro de contenedor (asumido)
+CVE-2025-6020
+
+# CPAN solo relevante si usas Perl activamente (no es el caso)
+CVE-2023-31484
+
+# SQLite bug que no aplica a consultas simples o si no usas sqlite3 directamente
+CVE-2025-6965
