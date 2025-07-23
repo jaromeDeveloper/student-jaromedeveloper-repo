@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: student-jaromedeveloper-app
+spec:
+  selector:
+    app: student-jaromedeveloper-app
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
