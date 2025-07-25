@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: student-jaromedeveloper-app
-          image:${IMAGE}
+          image: ${IMAGE}
           ports:
             - containerPort: 3000
           env:
