@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: student-jaromedeveloper-app
-          image: us-central1-docker.pkg.dev/devsecops-lab-464018/student-jarome-developer/student-jaromedeveloper-app:lastest
+          image:${IMAGE}
           ports:
             - containerPort: 3000
           env:
